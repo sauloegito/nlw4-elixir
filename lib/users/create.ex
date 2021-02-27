@@ -18,7 +18,6 @@ defmodule Rocketpay.Users.Create do
     user.id
     |> account_changeset()
     |> repo.insert()
-
   end
 
   defp account_changeset(user_id) do
